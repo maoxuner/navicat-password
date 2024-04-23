@@ -2,6 +2,7 @@
 
 docs: dist
 	cp -r dist docs
+	touch docs/.nojekyll
 
 dist: base=navicat-password
 dist: node_modules
