@@ -13,13 +13,16 @@ const encrypt = () => {
 const decrypt = () => {
   output.value = cipher.decrypt(input.value)
 }
+const cleanup = () => {
+  output.value = ''
+}
 </script>
 
 <template>
   <form @submit.native.prevent class="flex flex-col justify-center items-center gap-4 h-screen">
     <h2 class="text-center text-3xl pb-8">Navicat Password<br>Encrypt/Decrypt</h2>
     <div class="flex flex-col justify-center items-center gap-4 pb-4">
-      <input v-model="input" type="text" class="border border-blue-500 rounded w-96 px-4 py-2" placeholder="Encrypted/Decrypted Password" />
+      <input v-model="input" type="text" class="border border-blue-500 rounded w-96 px-4 py-2" placeholder="Encrypted/Decrypted Password" @input="cleanup" />
       <input v-model="output" type="text" class="border border-blue-500 rounded w-96 px-4 py-2" placeholder="Decrypted/Encrypted Password" />
     </div>
     <div class="flex gap-4">
