@@ -1,18 +1,17 @@
 .PHONY: clean cleanall
 
-docs: dist
-	cp -r dist docs
-	touch docs/.nojekyll
+all: docs
 
-dist: base=navicat-password
-dist: node_modules
-	npx vite build --base=$(base)
+docs: out_dir=docs
+docs: base=navicat-password
+docs: node_modules
+	npx vite build --outDir=$(out_dir) --base=$(base)
 
 node_modules:
 	npm ci
 
 clean:
-	@rm -rf docs dist
+	@rm -rf docs
 
 cleanall: clean
 	@rm -rf node_modules
