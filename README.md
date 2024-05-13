@@ -9,3 +9,5 @@ Decrypt navicat exported password (only for navicat >= 12)
 Navicat Password Encrypt/Decrypt Online [Gitee Pages](https://maoxuner.gitee.io/navicat-password) / [Github Pages](https://maoxuner.github.io/navicat-password)
 
 - [如何查看Navicat已保存数据库连接的密码?](https://blog.csdn.net/m0_63823719/article/details/131475110)
+- [How to get raw output from SHA1 using JS as PHP does?](https://stackoverflow.com/questions/65833701/how-to-get-raw-output-from-sha1-using-js-as-php-does)
+
